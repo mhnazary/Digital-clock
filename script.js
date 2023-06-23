@@ -8,20 +8,18 @@ function addedTime() {
     let minute = time.getMinutes()
     let second = time.getSeconds()
     hours.innerHTML = hour
-    minutes.innerHTML = minute
     if (minute <10 ) {
-        minute = '0' + second  
+        minute = '0' + minute  
     }else {
-        minute = second
+        minute = minute
     }
+    minutes.innerHTML = minute
     if (second <10 ) {
         second = '0' + second  
     }else {
         second = second
     }
-    }
     seconds.innerHTML = second
-    console.log('Hello world');
 }
 
 setInterval(addedTime, 1000)
